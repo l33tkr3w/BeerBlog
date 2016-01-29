@@ -1,6 +1,6 @@
 Cory
 
-Index.html - Setup Bootstrap Navbar and cleaned up template | 4 hours
+Index.html - Setup Bootstrap Navbar and cleaned up template | 4 hours asdf
 
 
 Greg

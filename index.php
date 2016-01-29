@@ -35,17 +35,17 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="single-post.html">Create New Post</a></li>
                             </ul>
                         </li>
                     </ul>  
 
-                    <ul class="nav navbar-nav navbar-right">
+                   
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -90,13 +90,13 @@
 
                                                                 <tr> 
                                                                     <td valign="top"> 
-                                                                        <input type="text" class="form-control" id="firstname" placeholder="Firstname" required>
+                                                                        <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
                                                                     </td>
                                                                 </tr>
 
                                                                 <tr>   
                                                                     <td valign="top">
-                                                                        <input type="text" class="form-control" id="lastname" placeholder="Lastname" required>
+                                                                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>  
@@ -146,7 +146,7 @@
                                                     </li>
 
 
-                                                    </ul>
+                                                    
                                                     </div>
                                                     </div>
                                                     </div>
