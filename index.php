@@ -16,11 +16,9 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-        <script src="assets/js/modernizr.js"></script>
     </head>
-
-
     <body>
+
         <!-- NAVBAR -->
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -43,9 +41,9 @@
                                 <li><a href="single-post.html">Create New Post</a></li>
                             </ul>
                         </li>
-                    </ul>  
+                    </ul>                     
 
-                   
+                    <ul class="nav navbar-nav navbar-right">
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -81,7 +79,6 @@
                                     <div class="row">
                                         <div class="col-md-12">                                      
                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-
 
                                                 <form action="user_registration.php"  method="POST" >
                                                     <div class="form-group">
@@ -144,9 +141,9 @@
                                                     </li>
                                                     </ul>
                                                     </li>
+                                                    </ul>
 
 
-                                                    
                                                     </div>
                                                     </div>
                                                     </div>
