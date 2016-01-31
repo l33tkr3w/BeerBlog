@@ -21,15 +21,12 @@ require('host.php');
 
     </head>
 
-<style type="text/css">
-   body { background: #384452 !important; } 
-   
-</style>
+    <style type="text/css">
+        body { background: #384452 !important; } 
+
+    </style>
 
     <body>
-
-
-
 
         <!-- NAVBAR -->
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -46,7 +43,6 @@ require('host.php');
 
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Post <b class="caret"></b></a>
@@ -91,7 +87,7 @@ require('host.php');
                         </li>
 
 
-                        <!-- Register DROPDOWN, Shows user registration drop down menu. -->
+                        <!-- USER REGISTRATION DROPDOWN, Shows user registration drop down menu. -->
                         <li class="dropdown">
 
                             <a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span class="caret"></span></a>
@@ -171,13 +167,16 @@ require('host.php');
             </div>
         </div>
 
+        <!--Background Beer Video-->
         <div class="container">
-            <div class="row">
-                <div class="responsive-vide">
-                    <video id="player" autoplay loop src="beer.mp4" class="img-responsive"></video>
-                </div>
-        </div> 
 
+            <div class="responsive-vide">
+                <video id="player" autoplay loop src="beer.mp4" class="img-responsive"></video>
+            </div> 
+        </div>
+
+
+        <!--Footer Start-->
         <div id="footerwrap">
             <div class="container">
                 <div class="row">
@@ -198,8 +197,6 @@ require('host.php');
         <script src="assets/js/jquery.prettyPhoto.js"></script>
         <script src="assets/js/jquery.isotope.min.js"></script>
         <script src="assets/js/custom.js"></script>
-
-
 
     </body>
 </html>
