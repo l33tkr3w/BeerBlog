@@ -1,4 +1,4 @@
-<?php 
+<?php
 require('host.php');
 ?>
 
@@ -18,11 +18,18 @@ require('host.php');
         <!-- CSS STYLES -->
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        
-        
-    
+
     </head>
+
+<style type="text/css">
+   body { background: #384452 !important; } 
+   
+</style>
+
     <body>
+
+
+
 
         <!-- NAVBAR -->
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -39,12 +46,15 @@ require('host.php');
 
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+
+
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Post <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="single-post.html">Create New Post</a></li>
+                                <!-- Dropdown for creating a new post
+                                Creates a textarea inside the dropdown-->
+                                <li><a href="#" onClick="MyWindow = window.open('create.php', 'MyWindow', width = 600, height = 300);
+                                        return false;">Create New Post</a></li>                                  
                             </ul>
                         </li>
                     </ul>                     
@@ -83,9 +93,9 @@ require('host.php');
 
                         <!-- Register DROPDOWN, Shows user registration drop down menu. -->
                         <li class="dropdown">
-                            
+
                             <a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span class="caret"></span></a>
-                            
+
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
                                     <div class="row">
@@ -163,13 +173,9 @@ require('host.php');
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">					
-                    <br><br>				
+                <div class="responsive-vide">
+                    <video id="player" autoplay loop src="beer.mp4" class="img-responsive"></video>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 himg">
-                    <img src="assets/img/Beer-Main.jpeg" class="img-responsive">
-                </div>
-            </div>
         </div> 
 
         <div id="footerwrap">
@@ -192,6 +198,8 @@ require('host.php');
         <script src="assets/js/jquery.prettyPhoto.js"></script>
         <script src="assets/js/jquery.isotope.min.js"></script>
         <script src="assets/js/custom.js"></script>
+
+
 
     </body>
 </html>
