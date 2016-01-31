@@ -24,6 +24,9 @@ require('host.php');
     <style type="text/css">
         body { background: #384452 !important; } 
 
+        .dropdown-menu {
+            width: 300px !important;     
+        }
     </style>
 
     <body>
@@ -61,17 +64,17 @@ require('host.php');
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
                                     <div class="row">
-                                        <div class="col-md-12">                                      
+                                        <div class="col-md-12" >                                      
                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 
                                                 <div class="form-group">
-                                                    <label class="sr-only" for="InputEmail">Login</label>
-                                                    <input type="email" class="form-control" id="InputUsername" placeholder="Username" required>
+                                                    <label class="sr-only" for="Username">Login</label>
+                                                    <input type="email" class="form-control" id="Username" placeholder="Username" required>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label class="sr-only" for="InputPassword">Password</label>
-                                                    <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>                                                
+                                                    <label class="sr-only" for="Password">Password</label>
+                                                    <input type="password" class="form-control" id="Password" placeholder="Password" required>                                                
                                                 </div>
 
                                                 <div class="form-group">
@@ -165,38 +168,90 @@ require('host.php');
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <!--Background Beer Video-->
-        <div class="container">
-
-            <div class="responsive-vide">
-                <video id="player" autoplay loop src="beer.mp4" class="img-responsive"></video>
-            </div> 
-        </div>
+        </div></div>
 
 
-        <!--Footer Start-->
-        <div id="footerwrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h4>About</h4>
-                        <div class="hline-w"></div>
-                        <p>Random about placeholder</p>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="video">
+            <div class="responsive-video">
+                <video id="player" autoplay loop src="beer.mp4" height="100%" ></video>
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/retina-1.1.0.js"></script>
-        <script src="assets/js/jquery.hoverdir.js"></script>
-        <script src="assets/js/jquery.hoverex.min.js"></script>
-        <script src="assets/js/jquery.prettyPhoto.js"></script>
-        <script src="assets/js/jquery.isotope.min.js"></script>
-        <script src="assets/js/custom.js"></script>
+        <hr>
+        
+        <div class="well">
+            
+            <h4 class="media-heading">Title</h4>
+            
+            <div class="media">             
+                <a>
+                    <img class="img-responsive" src="assets/img/beer-color-spectrum.jpg" width="100%">
+                    <br>
+                </a>
+                <div class="media-body">               
+                    <p class="text-right">Username</p>
+                    <p>Random blog post</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i> Time Posted </span></li>
+                        <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i> Comments </span>
+                        <li>|</li>
+                        <li>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </li>
+                        <li>|</li>
+                        <li>
 
-    </body>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="well">
+            <h4 class="media-heading">Title</h4>
+            <div class="media">
+                <a>
+                    <img class="media-object" src="assets/img/beer2.jpg">
+                </a>
+                <div class="media-body">
+                    
+                    <p class="text-right">Username</p>
+                    <p>Random blog post</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i> Time Posted </span></li>
+                        <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i> Comments </span>
+                        <li>|</li>
+                        <li>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </li>
+                        <li>|</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
 </html>
