@@ -22,7 +22,9 @@ require('host.php');
     </head>
 
     <style type="text/css">
-        body { background: #384452 !important; } 
+        body { 
+            background: #384452 !important; 
+        } 
 
         .dropdown-menu {
             width: 300px !important;     
