@@ -1,3 +1,6 @@
+<?php
+require('host.php');
+?>
 
 <html lang="en">
     <head>
@@ -16,11 +19,20 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-        <script src="assets/js/modernizr.js"></script>
     </head>
 
+    <style type="text/css">
+        body { 
+            background: #384452 !important; 
+        } 
+
+        .dropdown-menu {
+            width: 300px !important;     
+        }
+    </style>
 
     <body>
+
         <!-- NAVBAR -->
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -33,155 +45,215 @@
                     </button>
                     <a class="navbar-brand" href="index.php">Blog Your Beer.</a>
                 </div>
+
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">New Post <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="single-post.html">Create New Post</a></li>
+                                <!-- Dropdown for creating a new post
+                                Creates a textarea inside the dropdown-->
+                                <li><a href="#" onClick="MyWindow = window.open('create.php', 'MyWindow', width = 600, height = 300);
+                                        return false;">Create New Post</a></li>                                  
                             </ul>
                         </li>
-                    </ul>  
+                    </ul>                     
 
                     <ul class="nav navbar-nav navbar-right">
-
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
                                     <div class="row">
-                                        <div class="col-md-12">                                      
+                                        <div class="col-md-12" >                                      
                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+
                                                 <div class="form-group">
-                                                    <label class="sr-only" for="InputEmail">Login</label>
-                                                    <input type="email" class="form-control" id="InputUsername" placeholder="Username" required>
+                                                    <label class="sr-only" for="Username">Login</label>
+                                                    <input type="email" class="form-control" id="Username" placeholder="Username" required>
                                                 </div>
+
                                                 <div class="form-group">
-                                                    <label class="sr-only" for="InputPassword">Password</label>
-                                                    <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>                                                
+                                                    <label class="sr-only" for="Password">Password</label>
+                                                    <input type="password" class="form-control" id="Password" placeholder="Password" required>                                                
                                                 </div>
+
                                                 <div class="form-group">
                                                     <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                                </div>                                            
+                                                </div>   
+
                                             </form>
+
                                         </div>                                      
                                     </div>
                                 </li>
                             </ul>
                         </li>
 
-                        <!-- Register DROPDOWN, Shows user registration drop down menu. -->
 
+                        <!-- USER REGISTRATION DROPDOWN, Shows user registration drop down menu. -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span class="caret"></span></a>
+
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Register</b> <span class="caret"></span></a>
+
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
                                     <div class="row">
                                         <div class="col-md-12">                                      
-                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                            <form action=""  method="POST" >
+                                                <div class="form-group">
+                                                    <div id="data">
 
+                                                        <table width="350px">
+                                                            <tr> 
+                                                                <td valign="top"> 
+                                                                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                                                                </td>
+                                                            </tr>
 
-                                                <form action="user_registration.php"  method="POST" >
-                                                    <div class="form-group">
-                                                        <div id="data">
-                                                            <table width="350px">
+                                                            <tr>   
+                                                                <td valign="top">
+                                                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                                                                </td>
+                                                            </tr>
 
-                                                                <tr> 
-                                                                    <td valign="top"> 
-                                                                        <input type="text" class="form-control" id="firstname" placeholder="Firstname" required>
-                                                                    </td>
-                                                                </tr>
+                                                            <tr>  
+                                                                <td valign="top">
+                                                                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                                                </td>
+                                                            <tr>  
+                                                                <td valign="top">
+                                                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                                </td>
+                                                            </tr>
 
-                                                                <tr>   
-                                                                    <td valign="top">
-                                                                        <input type="text" class="form-control" id="lastname" placeholder="Lastname" required>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>  
-                                                                    <td valign="top">
-                                                                        <input type="email" class="form-control" id="email" placeholder="Email Address" required>
-                                                                    </td>
-                                                                <tr>  
-                                                                    <td valign="top">
-                                                                        <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>                                                                
-                                                                    <td valign="top">
-                                                                        <input type="text" class="form-control" id="address" placeholder="Street Address" required>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>                                                              
-                                                                    <td valign="top">
-                                                                        <input type="text" class="form-control" id="city" placeholder="City" required>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>                                                                
-                                                                    <td valign="top">
-                                                                        <input type="text" class="form-control" id="state" placeholder="State" required>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>                                                               
-                                                                    <td valign="top">
-                                                                        <input type="text" class="form-control" id="zip" placeholder="Zipcode" required>
-                                                                    </td>
-                                                                </tr>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td colspan="2" style="text-align:center">
-                                                                        <div class="form-group">                                                                           
-                                                                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                                                                        </div>   
-                                                                    </td>
-                                                                </tr>
-                                                            </table>                                  
-                                                            </form>
-                                                        </div>  
-                                                    </div>
-                                                    </div>
-                                                    </li>
-                                                    </ul>
-                                                    </li>
+                                                            <tr>                                                                
+                                                                <td valign="top">
+                                                                    <input type="text" class="form-control" id="address" placeholder="Street Address" required>
+                                                                </td>
+                                                            </tr>
 
+                                                            <tr>                                                              
+                                                                <td valign="top">
+                                                                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                                                                </td>
+                                                            </tr>
 
-                                                    </ul>
-                                                    </div>
-                                                    </div>
-                                                    </div>
+                                                            <tr>                                                                
+                                                                <td valign="top">
+                                                                    <input type="text" class="form-control" id="state" placeholder="State" required>
+                                                                </td>
+                                                            </tr>
 
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-lg-offset-2">					
-                                                                <h1>Craft Beer Blog</h1>				
-                                                            </div>
-                                                            <div class="col-lg-8 col-lg-offset-2 himg">
-                                                                <img src="assets/img/Beer-Main.jpeg" class="img-responsive">
-                                                            </div>
-                                                        </div>
+                                                            <tr>                                                               
+                                                                <td valign="top">
+                                                                    <input type="text" class="form-control" id="zip" placeholder="Zipcode" required>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="2" style="text-align:center">
+                                                                    <div class="form-group">                                                                           
+                                                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                                                    </div>   
+                                                                </td>
+                                                            </tr>
+                                                        </table>                                  
+                                                        </form>
                                                     </div> 
+                                                </div>
+                                        </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div></div>
 
-                                                    <div id="footerwrap">
-                                                        <div class="container">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <h4>About</h4>
-                                                                    <div class="hline-w"></div>
-                                                                    <p>Random about placeholder</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
 
-                                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-                                                    <script src="assets/js/bootstrap.min.js"></script>
-                                                    <script src="assets/js/retina-1.1.0.js"></script>
-                                                    <script src="assets/js/jquery.hoverdir.js"></script>
-                                                    <script src="assets/js/jquery.hoverex.min.js"></script>
-                                                    <script src="assets/js/jquery.prettyPhoto.js"></script>
-                                                    <script src="assets/js/jquery.isotope.min.js"></script>
-                                                    <script src="assets/js/custom.js"></script>
+    <div class="container">
+        <div class="video">
+            <div class="responsive-video">
+                <video id="player" autoplay loop src="beer.mp4" height="100%" ></video>
+            </div>
+        </div>
 
-                                                    </body>
-                                                    </html>
+        <hr>
+        
+        <div class="well">
+            
+            <h4 class="media-heading">Title</h4>
+            
+            <div class="media">             
+                <a>
+                    <img class="img-responsive" src="assets/img/beer-color-spectrum.jpg" width="100%">
+                    <br>
+                </a>
+                <div class="media-body">               
+                    <p class="text-right">Username</p>
+                    <p>Random blog post</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i> Time Posted </span></li>
+                        <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i> Comments </span>
+                        <li>|</li>
+                        <li>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </li>
+                        <li>|</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="well">
+            <h4 class="media-heading">Title</h4>
+            <div class="media">
+                <a>
+                    <img class="media-object" src="assets/img/beer2.jpg">
+                </a>
+                <div class="media-body">
+                    
+                    <p class="text-right">Username</p>
+                    <p>Random blog post</p>
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i> Time Posted </span></li>
+                        <li>|</li>
+                        <span><i class="glyphicon glyphicon-comment"></i> Comments </span>
+                        <li>|</li>
+                        <li>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </li>
+                        <li>|</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

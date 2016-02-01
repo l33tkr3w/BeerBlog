@@ -1,10 +1,20 @@
-Cory
-
+________________________________________________________________________________
+Cory Hafer
+________________________________________________________________________________
 Index.html - Setup Bootstrap Navbar and cleaned up template | 4 hours
+Re imported project as a php project. | 1 hour
+Implemented user registration dropdown.  | 30 min
+Altered create post dropdown | 30 min
+Implemented video background | 30 min
+________________________________________________________________________________
 
 
+
+
+________________________________________________________________________________
 Greg
-
+________________________________________________________________________________
 Database User registration  | 4 hours
 
+________________________________________________________________________________
 

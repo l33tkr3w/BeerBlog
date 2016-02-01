@@ -5783,4 +5783,34 @@ button.close {
     display: none !important;
   }
 }
+
+
+.responsive-video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 60px; overflow: hidden;
+}
+
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#container { 
+      position: absolute; 
+      width: 100%; 
+      height: 100%; 
+      overflow: hidden; 
+  }
+
+  #player { 
+      position: absolute; 
+  }
+
 /*# sourceMappingURL=bootstrap.css.map */

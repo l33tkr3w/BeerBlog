@@ -1,5 +1,4 @@
 <?php
-
 try
 {
     $pdo = new PDO("mysql:host=localhost;dbname=beer_db;",'root','');
@@ -11,9 +10,6 @@ catch (PDOException $e)
     echo "Could not connect to database <br>".$e->getMessage();
     
 }
-
-
-
 ?>
 
 
