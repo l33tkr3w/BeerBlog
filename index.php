@@ -200,7 +200,7 @@ require('host.php');
                         <span><i class="glyphicon glyphicon-comment"></i> Comments </span>
                         <li>|</li>
                         <li>
-                            <span class="glyphicon glyphicon-star"></span>
+                                                                                                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>

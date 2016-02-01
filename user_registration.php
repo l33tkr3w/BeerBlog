@@ -6,27 +6,7 @@ print_r($_POST);
 if (isset($_POST['firstname'])) {
     $pwd = $_POST['password'];
 
-//    //////// Check If User Name Exisits /////////////
-//
-//	
-//	//$sql_check = "Select username Where username Like :checkUser";
-//		$sql_check = "Select username From tbl_user Where username Like :checkUser";
-//	
-//	
-//	$checkUserName = filter_var($_POST['username'],FILTER_SANITIZE_STRING);
-//	$sql_checkh = $pdo->prepare($sql_check);
-//	$sql_checkh->bindparam(":checkUser",$checkUserName);
-//	$checkrow = $sql_checkh->execute();
-//	
-//	$checkrow = $sql_checkh->fetch();
-//	
-//	if($sql_checkh->rowCount()>0)
-//	{
-//		unset($_POST);
-//		header("Location: errorMessage.php");
-//	}
-//	
-//	////////////////////////////////////
+
     //create sql statement
     $sql_stmt = "INSERT INTO tbl_blog "
             . "(firstname, "
